@@ -1,0 +1,85 @@
+{
+	"info": {
+		"name": "API Flask Locais",
+		"_postman_id": "ab0db60c-12b4-4f48-8337-14fb44cf9e5a",
+		"description": "Coleção de requisições para a API Flask Locais."
+	},
+	"item": [
+		{
+			"name": "GET Locais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{base_url}}/locais",
+					"protocol": "{{base_url}}",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"locais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cadastrar Local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Nome do Local\",\n    \"endereco\": \"Endereço do Local\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/locais",
+					"protocol": "{{base_url}}",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"locais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Alterar Local",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Novo Nome do Local\",\n    \"endereco\": \"Novo Endereço do Local\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/locais/1",
+					"protocol": "{{base_url}}",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"locais",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
